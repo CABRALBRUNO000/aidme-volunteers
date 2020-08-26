@@ -1,0 +1,34 @@
+<div class="container">
+ 
+  <form class=" row form-inline mt-4">
+      <input class="form-control mr-sm-2"
+      #termoDaPesquisa 
+      type="search" placeholder="Pesquisar" 
+ 
+      (keyup)="pesquisa(termoDaPesquisa.value)"
+      />
+      
+  </form>
+  <hr>
+  <div class="flex-container">
+
+    <div *ngFor=" let item of volunteers">
+      <div class="card" style="width: 18rem;" >
+        <img class="imgV card-img-top" [src]="item.imgUrl" alt="Imagem do voluntário">
+        <div class="card-body" >
+          <hr>
+          <h2 > </h2> 
+          <h4 class="card-title">{{item.nome}}</h4>
+          <h5 class="card-title">{{item.profissao}}</h5>
+          <h5 class="card-title">{{item.dataNascimento |dataIdade}} </h5>
+          <p class="card-text">{{item.outrasInformacoes}}</p>
+          <a [routerLink]="['/voluntary',item.id] " class="btn btn-success" >Detalhes</a>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+
+
+
+
