@@ -18,7 +18,7 @@ const routes: Routes = [];
     { path: 'formulario/:id', component: FormCadComponent },
     { path: 'filtros', component: FiltrosComponent },
     { path: '**', component: Erro404Component },
-  ])],
+], { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

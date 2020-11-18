@@ -1,15 +1,15 @@
 export class VoluntaryModel{                                   
-    // public id: number
-    // public nome: string  
-    // public sexo: string  
-    // public dataNascimento:string
-    // public profissao:string 
-        // public cepVo: string
-        // public logradouroVo:string
-        // public numeroVo: string
-        // public bairroVo: string
-        // public cidadeVo: string
-        // public ufVo: string
+    public id: number
+    public nome: string  
+    public sexo: string  
+    public dataNascimento:string
+    public profissao:string 
+        public cepVo: string
+        public logradouroVo:string
+        public numeroVo: string
+        public bairroVo: string
+        public cidadeVo: string
+        public ufVo: string
         public complementoVo: string
         public CEPVo: string
     public instituicao:string
@@ -36,8 +36,8 @@ export class VoluntaryModel{
     public assiduidade:string 
     public diponivel:boolean   
     public outrasInformacoes:string 
- //   public email:string 
-   // public telefoneVo:string   
+   public email:string 
+   public telefoneVo:string   
     public imgUrl:string   
     public dataCad:string   
 /*
